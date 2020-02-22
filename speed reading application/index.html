@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>speed reading app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    
+<link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+<script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div data-role="page" id="page1" data-theme="a">
+        <div data-role='header'>
+            
+                
+                       
+                    </div>
+            <div role='main' class='ui-content'>
+                <div class="header">
+                        <h1>
+                                Speed Reading App
+                            </h1>
+                    <p><i>Make your reading more efficient</i></p>
+                </div>
+                <div id="sliders">
+                <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                           <div>
+                               FONT SIZE:<span id="fontsize1">50</span>px
+                           </div>    
+                                    
+                                
+                        </div>
+                        <div class="ui-block-b">
+                            <div>
+                                <span id="words">300</span> words per minute
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                           
+                            
+                        <form class="full-width-slider">
+                           
+                            <input type="range" name="fontsize" id="fontsize" min="20" max="100" value="50" step="5" data-highlight="true">
+                        </form>
+                    </div>
+                    <div class="ui-block-b">
+                        <form class="full-width-slider">
+                            
+                            <input type="range" name="speed" id="speed" min="50" max="600" value="300" step="50"  data-highlight="true">  
+
+                                
+                            </form>
+                        
+                    </div>
+                </div>
+                    
+	
+<form class="full-width-slider">
+   <div id="pro"> <label for="progress">Progress: <span id="percent">0</span>%</label></div>
+    <input type="range" name="progress" id="progress" min="0" max="100" value="0" data-highlight="true">
+</form>
+                </div>
+                <div id="result">word</div>
+                <div id="error">Enter text in box</div>
+                </div>
+                <div id="input">
+                    <textarea id="userinput"></textarea>
+                    <button id="start">Start Reading</button>
+                    <button id="new">New</button>
+                    <button id="pause">Pause</button>
+                    <button id="resume">Resume</button>
+                </div>
+                
+                
+                <div data-role='footer' data-position="fixed">
+                        <div data-role="navbar">
+                                <ul>
+                                    <li><a href="#page1" data-transition="pop" data-icon="home" class="ui-button-active ui-state-persist">Home</a></li>
+                                    <li><a href="#page2" data-transition="pop" data-icon="info">About</a></li>
+                                    <li><a href="#page3" data-transition="pop" data-icon="phone">Contact</a></li>
+                                </ul>
+                                </div>
+                    </div>
+        </div>
+    </div>
+
+
+                <div data-role="page" id="page3" data-theme="b">
+                        <div data-role='header'>
+                                
+                            </div>
+                            <div role='main' class='ui-content'>
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a">
+                                        <a href="mail.html" data-role="button" data-icon="mail" data-transition="pop" data-rel="dialogue">Email</a>
+                                        
+                                    </div>
+                                    
+                                        <div class="ui-block-b">
+                                                <a href="phone.html" data-role="button" data-icon="phone" data-transition="pop" data-rel="dialogue">Phone</a>
+                                                
+                                            </div>
+                                </div>
+                                <div id="text">Most heartedly welcomed for any suggestions or Queries</div>
+                                </div>
+                                <div data-role='footer' data-position="fixed">
+                                        <div data-role="navbar">
+                                                <ul>
+                                                    <li><a href="#page1" data-transition="pop" data-icon="home">Home</a></li>
+                                                    <li><a href="#page2" data-transition="pop" data-icon="info">About</a></li>
+                                                    <li><a href="#page3" data-transition="pop" data-icon="phone"  class="ui-button-active ui-state-persist">Contact</a></li>
+                                                </ul>
+                                                </div>
+                                    </div>
+                        </div>
+
+                        <div data-role="page" id="page2" data-theme="b">
+                                <div data-role='header'>
+                                        
+                                    </div>
+                                    <div role='main' class='ui-content'>
+                                         <ul data-role="listview" data-filter="true">
+                                            <li data-role="list-divider">Main Information</li> 
+                                            <li>
+                                                 <a href="about.html" data-transition="pop" data-rel="dialogue">About Application</a>
+                                             </li>
+                                             
+
+                                         </ul>
+                                        </div>
+                                        <div data-role='footer' data-position="fixed">
+                                                <div data-role="navbar">
+                                                        <ul>
+                                                            <li><a href="#page1" data-transition="pop" data-icon="home">Home</a></li>
+                                                            <li><a href="#page2" data-transition="pop" data-icon="info" class="ui-button-active ui-state-persist">About</a></li>
+                                                            <li><a href="#page3" data-transition="pop" data-icon="phone">Contact</a></li>
+                                                        </ul>
+                                                        </div>
+                                            </div>
+                                        </div>
+
+<script src="index.js"></script>              
+       
+</body>
+</html>

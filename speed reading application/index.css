@@ -1,0 +1,57 @@
+
+#page1{
+    background:url("homepage.JPG");
+    background-position:center center; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color:whitesmoke;
+    text-align: center;
+    font-family: 'Lobster',serif;
+
+}
+.header{
+    font-family: 'Pacifico',serif;
+}
+#error{
+    background-color: rgb(236, 132, 132);
+    width:50%;
+    margin: 20px auto;
+    font-size:20px;
+    border-radius: 10px;
+}
+#result{
+    font-size: 40px;
+    background-color: rgb(243, 234, 234,0.3);
+    color:black;
+    padding: 5% 0;
+}
+#text{
+    font-family: 'Lobster',serif;
+    font-size: 40px;
+    color:whitesmoke;
+
+}
+#text1{
+    font-family: 'Lobster',serif;
+    font-size: 30px;
+    color:blue;
+
+}
+#text3{
+    font-family: 'Lobster',serif;
+    font-size: 20px;
+    color:black;
+
+}
+
+	
+/* Hide the number input */
+.full-width-slider input {
+    display: none !important;
+}
+.full-width-slider .ui-slider-track {
+ margin-left: 15px;
+}
+#pro{
+    color:white;
+}
